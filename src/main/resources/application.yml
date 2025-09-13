@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: tarifador
+  datasource:
+    url: jdbc:h2:mem:tarifador
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        # Adicionar para debug de DDL
+        hbm2ddl:
+          auto: create-drop
+    # Configuração para executar data.sql após criação das tabelas
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+      continue-on-error: false
+
+server:
+  port: 8080
+
+logging:
+  level:
+    br.com.telebraz.tarifador: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    # Adicionar para ver DDL
+    org.hibernate.tool.hbm2ddl: DEBUG

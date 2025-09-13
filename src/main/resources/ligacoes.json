@@ -1,0 +1,26 @@
+{
+  "ligacoes": [
+    {
+      "numeroOrigem": "987654321",
+      "numeroDestino": "123456789",
+      "inicioLigacao": "2024-01-15T14:30:00",
+      "duracaoMinutos": 10,
+      "tipoLigacao": "LOCAL"
+    },
+    {
+      "numeroOrigem": "987654321",
+      "numeroDestino": "555666777",
+      "inicioLigacao": "2024-01-15T20:15:00",
+      "duracaoMinutos": 25,
+      "tipoLigacao": "LONGA_DISTANCIA"
+    },
+    {
+      "numeroOrigem": "123456789",
+      "numeroDestino": "987654321",
+      "inicioLigacao": "2024-01-15T16:45:00",
+      "duracaoMinutos": 150,
+      "tipoLigacao": "LOCAL"
+    }
+  ],
+  "observacoes": "Processamento de teste"
+}
